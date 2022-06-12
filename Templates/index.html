@@ -1,0 +1,108 @@
+{% extends 'base.html' %} {% block title%} Portfolio Website {% endblock %} {%
+block css %}
+<link
+  rel="stylesheet"
+  href="{{url_for('static', filename ='css/index.css')}}"
+/>
+{% endblock %} {% block body %}
+<div class="header-section">
+  <div class="header-section-left">
+    <div class="header-section-left-contents">
+      <div class="header-section-left-picture">
+        <div class="div background-cicle"></div>
+        <img
+          src="{{url_for('static', filename ='images/dev-derah-picture.png')}}"
+          alt="Dev-derah-picture"
+          class="dev-derah-picture"
+        />
+        
+      </div>
+      <div class="header-section-texts">
+        <h3 class="header-texts">I am <span class="changing-text"></span></h3>
+        <button class="contact-me">Contact me</button>
+      </div>
+    </div>
+  </div>
+  <div class="header-section-right">
+    <img src="{{url_for('static', filename ='images/Oreti.svg')}}" />
+  </div>
+</div>
+<div class="gradient"></div>
+<!-- ABOUT ME -->
+<div class="about-me-section bubble-background">
+  <div class="about-me-container" data-aos="fade-up" data-aos-duration="4000">
+      <h3>About Me</h3>
+      <div class="p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, harum sunt? Magnam, totam laudantium molestiae exercitationem dolorem quia quod a saepe tempora amet repellat necessitatibus eveniet ex quos corrupti doloremque.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse unde illum blanditiis architecto. In vel dolor enim officia officiis et modi est, eligendi delectus facere voluptatum cupiditate. Animi, reprehenderit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate laboriosam, libero voluptates sequi omnis dolor placeat rerum, quia doloribus earum quaerat magni. Dignissimos tempora repellat dolore nemo corrupti sit.
+      </div>
+  </div>
+</div>
+
+<div class="gradient2"></div>
+
+<!-- SKILLS SECTION2 -->
+<div class="skills-section">
+  <div class="p">MY Skills</div>
+  <div class="skills-container">
+    <div class="skills-card">
+      <div class="card" data-aos="slide-left">
+        <i class="fa-brands fa-html5"></i>
+        <div class="skill-description">
+          <h2>HTML</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
+        </div>
+      </div>
+    </div>
+    <div class="empty-card"></div>
+    <div class="empty-card"></div>
+    <div class="skills-card">
+      <div class="card right" data-aos="slide-left">
+        <i class="fa-brands fa-css3-alt"></i>
+        <div class="skill-description">
+          <h2>CSS</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
+        </div>
+      </div>
+    </div>
+    <div class="skills-card">
+      <div class="card ">
+        <i class="fa-brands fa-js-square"></i>
+        <div class="skill-description">
+          <h2>Javascript</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
+        </div>
+      </div>
+    </div>
+    <div class="empty-card"></div>
+    <div class="empty-card"></div>
+    <div class="skills-card">
+      <div class="card right">
+        <i class="fa-brands fa-python"></i>
+        <div class="skill-description">
+          <h2>Python</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Portfolio section -->
+<div class="porfolio-section diagonal-pattern">
+  <div class="portfolio-text">Portfolio</div>
+  <div class="portfolios-container">
+    <div class="project-container">
+      <div class="portfolio"></div>
+      <div class="portfolio-description">
+        <p>A selection of some of my most recent works</p>
+        <a href="">
+          <p>View this project</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
