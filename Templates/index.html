@@ -31,7 +31,7 @@ block css %}
 <!-- ABOUT ME -->
 <div class="about-me-section bubble-background">
   <div class="about-me-container" data-aos="fade-up" data-aos-duration="4000">
-      <h3>About Me</h3>
+      <h3 class ="about-me-header-text">About Me</h3>
       <div class="p">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, harum sunt? Magnam, totam laudantium molestiae exercitationem dolorem quia quod a saepe tempora amet repellat necessitatibus eveniet ex quos corrupti doloremque.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi esse unde illum blanditiis architecto. In vel dolor enim officia officiis et modi est, eligendi delectus facere voluptatum cupiditate. Animi, reprehenderit.
@@ -40,69 +40,131 @@ block css %}
   </div>
 </div>
 
-<div class="gradient2"></div>
+<div class="gradient2">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#75CBB3" fill-opacity="1" d="M0,160L720,224L1440,128L1440,320L720,320L0,320Z"></path></svg>
+</div>
 
 <!-- SKILLS SECTION2 -->
-<div class="skills-section">
-  <div class="p">MY Skills</div>
+<!-- <div class="skills-section">
+  <div class="skills-section-header">MY Skills</div>
   <div class="skills-container">
     <div class="skills-card">
-      <div class="card" data-aos="slide-left">
+      <div class="card" data-aos="fade-right">
         <i class="fa-brands fa-html5"></i>
-        <div class="skill-description">
-          <h2>HTML</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
-        </div>
       </div>
     </div>
-    <div class="empty-card"></div>
-    <div class="empty-card"></div>
+
     <div class="skills-card">
-      <div class="card right" data-aos="slide-left">
+      <div class=" card right" data-aos="fade-left">
         <i class="fa-brands fa-css3-alt"></i>
-        <div class="skill-description">
-          <h2>CSS</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
         </div>
       </div>
     </div>
+
+      <div class="skills-card">
+      <div class=" card right" data-aos="fade-left">
+        <i class="fa-brands fa-css3-alt"></i>
+        </div>
+      </div>
+    </div>
+
     <div class="skills-card">
-      <div class="card ">
+      <div data-aos="fade-right" class="card">
         <i class="fa-brands fa-js-square"></i>
-        <div class="skill-description">
-          <h2>Javascript</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
-        </div>
       </div>
     </div>
-    <div class="empty-card"></div>
-    <div class="empty-card"></div>
     <div class="skills-card">
-      <div class="card right">
+      <div class="card " data-aos="fade-left">
         <i class="fa-brands fa-python"></i>
-        <div class="skill-description">
-          <h2>Python</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde expedita tenetur nostrum commodi! Eius corporis</p>
-        </div>
       </div>
+
+    </div>
+      <div class="skills-card">
+      <div class="card " data-aos="fade-left">
+        <i class="fa-solid fa-database"></i>
+      </div>
+
     </div>
 
   </div>
+</div> -->
+
+<!-- skills-section -->
+<div class="skills-section">
+  <div class="skills-text">
+    <h3>Skills</h3>
+  </div>
+  <div class="skills-container">
+    <div class="skill ">
+      <i class="fa-brands fa-html5"></i>
+      <h4>HTML</h4>
+    </div>
+     <div class="skill ">
+      <i class="fa-brands fa-css3-alt"></i>
+      <h4>CSS</h4>
+    </div>
+    <div class="skill ">
+      <i class="fa-brands fa-js-square"></i>
+      <h4>Javascript</h4>
+    </div>
+    <div class="skill ">
+      <i class="fa-brands fa-python"></i>
+      <h4>Python</h4>
+    </div>
+    <div class="skill ">
+      <i class="fa-solid fa-database"></i>
+      <h4>SQL</h4>
+    </div>
+  </div>
 </div>
 
+<div class="arc-svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#DC2249" fill-opacity="1" d="M0,192L720,96L1440,224L1440,320L720,320L0,320Z"></path></svg>
+
+  <div class="portfolio-text">
+  <h3>Portfolio</h3>
+  </div>
+</div>
 <!-- Portfolio section -->
-<div class="porfolio-section diagonal-pattern">
-  <div class="portfolio-text">Portfolio</div>
+<div class="porfolio-section">
   <div class="portfolios-container">
-    <div class="project-container">
-      <div class="portfolio"></div>
+    <div class="project-container card">
+      <div class="project-picture">
+        <img src="{{url_for('static', filename ='images/website.png')}}" alt="" >
+      </div>
       <div class="portfolio-description">
-        <p>A selection of some of my most recent works</p>
+        <p>Project name : <span>Banky</span></p>
         <a href="">
           <p>View this project</p>
         </a>
       </div>
     </div>
+
+    <div class="project-container card">
+      <div class="project-picture">
+        <img src="{{url_for('static', filename ='images/website.png')}}" alt="" >
+      </div>
+      <div class="project-description">
+        <p>Project name : <span>Banky</span></p>
+        <a href="">
+          <p>View this project</p>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="project-container card">
+      <div class="project-picture">
+        <img src="{{url_for('static', filename ='images/website.png')}}" alt="" >
+      </div>
+      <div class="project-description">
+        <p>Project name : <span>Banky</span></p>
+        <a href="">
+          <p>View this project</p>
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
 {% endblock %}
